@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Pragma" content="no-cache">
+　<meta http-equiv="Cache-Control" content="no-cache">
+  <meta name="robots" content="noindex" />
+  <script src="library/enchant.min.js"></script>
+  <script src="library/jquery-3.3.1.min.js"></script>
+  <script src="dist/main.js"></script>
+  <script>
+    if (window == top.window) location.href = "index.html";
+  </script>
+  <style>
+    body,
+    input,
+    textarea,
+    select {
+      /* 入力欄にフォーカスが当たっても拡大しない */
+      font-size: 16px;
+    }
+
+    body {
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+  </style>
+  <script>
+    window.focus(); //フォーカスをもってく
+  </script>
+</head>
+
+<body onclick="window.focus();">
+</body>
+
+</html>
