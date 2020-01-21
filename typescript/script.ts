@@ -48,8 +48,8 @@ window.onload = function () {
                         score++; // グローバル変数のスコアを１増やす
                         showLabel(); // スコアを反映
                         // MEMO: 作っちゃうおじさん謹製のテキストバウンドモジュールを使用する例
-                        //const label = parts.TextBound("+1", this.x, this.y, 32, "orange", 60);
-                        //scene.addChild(label);
+                        const label = parts.TextBound("+1", this.x, this.y, 32, "orange", 60);
+                        scene.addChild(label);
                         if (score >= 10) {
                             score = 0;
                             setScene(1);
